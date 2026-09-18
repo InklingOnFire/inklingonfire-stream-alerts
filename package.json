@@ -109,7 +109,7 @@
   "dependencies": {
     "@twurple/auth": "8.2.0",
     "@twurple/api": "8.2.0",
-    "@twurple/eventsub-ws": "8.2.04",
+    "@twurple/eventsub-ws": "8.2.0",
     "@twurple/eventsub-base": "8.2.0"
   }
 }
