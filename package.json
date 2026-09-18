@@ -1,0 +1,115 @@
+{
+  "name": "inkling-on-fire-alerts",
+  "version": "0.0.0",
+  "description": "Alert bundle for InklingOnFire",
+  "homepage": "",
+  "type": "module",
+  "author": {
+    "name": "Cyo Firecaster",
+    "email": "inklingonfire@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "alerts",
+    "twitch",
+    "streamer",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^2.0.0",
+    "dashboardPanels": [
+      {
+        "name": "settings",
+        "title": "Settings",
+        "file": "alerts.html",
+        "headerColor": "#525F78",
+        "fullbleed": true
+      },
+      {
+        "name": "logout",
+        "title": "Log out of Twitch Integration",
+        "file": "dialog-logout.html",
+        "dialog": true,
+        "headerColor": "#525F78",
+        "width": 4,
+        "dialogButtons": [
+          {
+            "name": "Log out",
+            "type": "confirm"
+          },
+          {
+            "name": "Cancel",
+            "type": "dismiss"
+          }
+        ]
+      },
+      {
+        "name": "events",
+        "title": "Events",
+        "width": 3,
+        "file": "events.html",
+        "workspace": "Events",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "index.html",
+        "width": 2560,
+        "height": 1440,
+        "singleInstance": false
+      }
+    ],
+    "soundCues": [
+      {
+        "name": "follow",
+        "assignable": false,
+        "defaultFile": "sounds/sub.mp3",
+        "channels": 1
+      },
+      {
+        "name": "speaking",
+        "assignable": false,
+        "defaultFile": "sounds/speaking.mp3",
+        "channels": 1
+      },
+      {
+        "name": "sub",
+        "assignable": false,
+        "defaultFile": "sounds/sub.mp3",
+        "channels": 1
+      },
+      {
+        "name": "raid",
+        "assignable": false,
+        "defaultFile": "sounds/raid.mp3",
+        "channels": 1
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@twurple/auth": "8.2.0",
+    "@twurple/api": "8.2.0",
+    "@twurple/eventsub-ws": "8.2.04",
+    "@twurple/eventsub-base": "8.2.0"
+  }
+}
